@@ -1,4 +1,4 @@
-from platform import system as sys_name #retorna o nome do SO
+from platform import system as sys_name    #retorna o nome do SO
 from os import system as system_call       # Executa o shell no comando
 
 def ping(host):
