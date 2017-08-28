@@ -20,3 +20,9 @@ class Pessoa(object):
 #Instanciando a classe Pessoa, utilizando um objeto chamado Pessoa
 #desta forma, pessoa (diferente de Pessoa), passa a ser um obejto
 #de uma classe. Vejamos:
+
+pessoa = Pessoa("Murilo", 22)
+
+#Invocando o método fala da classe Pessoa:
+
+pessoa.fala()
