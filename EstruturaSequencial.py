@@ -9,16 +9,27 @@ print("O número informado foi {}".format(num))
 num = int(input('Informe o primeiro numero: ')) #obs: o input sempre recebe como string sendo necessário converter para int(), porém, o texto do input deve estar em ''
 num1 = int(input('Informe o segundo numero: '))
 soma = num + num1
-print("Soma: {}".format(soma))
+print("Soma: ",soma)
 
 #4 Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+num1 = float(input("informe sua nota do 1º Bimestre: "))
+num2 = float(input("informe sua nota do 2º Bimestre: "))
+num3 = float(input("informe sua nota do 3º Bimestre: "))
+num4 = float(input("informe sua nota do 4º Bimestre: "))
+media = (num1 + num2 + num3 + num4) / 4
+print("",media)
 #5 Faça um Programa que converta metros para centímetros.
-def metrosCent(metros):
-    return a * 100
+metros = int(input("Informe os metros: "))
+print("Centrimetros: ",metros*100)
 #Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+raio = int(input("Informe o raio do circulo: "))
+area = 3.14 * (raio * raio)
+print("Area do circulo: ",area)
+
 #Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
-def areaQuad(lado):
-    return l * l * l
+areaQuad = int(input("Informe a medida do lado do quadrado: ")))
+
+
 #Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
 #Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius.
 
@@ -32,17 +43,11 @@ def areaQuad(lado):
     #o terceiro elevado ao cubo.
 
 #Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula:
-def imc(altura):
-    return (72.7*altura) - 58
+#(72.7*altura) - 58
 #Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
         #Para homens: (72.7*h) - 58
         #Para mulheres: (62.1*h) - 44.7 (h = altura)
         #Peça o peso da pessoa e informe se ela está dentro, acima ou abaixo do peso.
-def imc(altura, sexo):
-    if sexo == 'h':
-        (72.7*altura) - 58
-
-
 
 #João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e verifique se há excesso. Se houver, gravar na variável excesso e na variável multa o valor da multa que João deverá #pagar. Caso contrário mostrar tais variáveis com o conteúdo ZERO.
 #Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, faça um programa que nos dê:
@@ -69,4 +74,4 @@ def imc(altura, sexo):
     #comprar apenas galões de 3,6 litros;
     #misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
 
-#Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos). 
+#Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
