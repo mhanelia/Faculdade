@@ -2,13 +2,11 @@ import sys
 import requests
 class subdomains(object):
     """docstring for getSubdomains."""
-    def __init__(self, file_hosts, site):
-        super(getSubdomains, self).__init__()
+    def __init__(self, file_hosts, target):
         self.file_hosts = file_hosts
-        self.site = site
+        self.target = target
 
-def getSubdomains(site, file_hosts):
-    target = site
+def getSubdomains(target, file_hosts):
     target = target.split("//")
     file_hosts = "hosts.txt"
 
@@ -18,7 +16,7 @@ def getSubdomains(site, file_hosts):
         list.append(target[0] +  "//" + host + target[1])
 
     for i in list:
-        print("i: ", i)
+        print(i)
         r = requests.get(i)
         print(r.status_code)
 
