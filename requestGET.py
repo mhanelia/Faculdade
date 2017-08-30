@@ -2,9 +2,9 @@ import sys
 import requests
 class subdomains(object):
     """docstring for getSubdomains."""
-    def __init__(self, file_hosts, target):
-        self.file_hosts = file_hosts
+    def __init__(self, target, file_hosts):
         self.target = target
+        self.file_hosts = file_hosts
 
 def getSubdomains(target, file_hosts):
     target = target.split("//")
