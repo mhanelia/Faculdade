@@ -234,4 +234,40 @@ print("Lata {:.2f} Galao {:.2f} ".format(qntLata,qntGalao))
 
 ---------------------------------------------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+=======
+areaQuad = float(input("Informe a area a ser pintada: "))
+
+
+lata = 18 * 6
+usoLata = areaQuad / lata
+galao = 3.6 * 6
+usoGalao = areaQuad / galao
+
+aux = 0
+qntLata = 0
+qntGalao = 0
+if areaQuad > lata:
+    while areaQuad >= (aux + lata):
+        aux += lata
+        qntLata += 1
+
+    while areaQuad >= (aux):
+        aux += galao
+        qntGalao+=1
+
+else:
+    if areaQuad < 65:
+        while areaQuad >= (aux):
+            aux += galao
+            qntGalao+=1
+    else:
+        while areaQuad >= (aux):
+            aux += lata
+            qntLata += 1
+
+print("Lata {:.2f} Galao {:.2f} ".format(qntLata,qntGalao))
+
+#Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+>>>>>>> 5935fff8735c304b79da77afa919b1a307c38140
