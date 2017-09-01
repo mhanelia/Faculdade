@@ -177,12 +177,17 @@ Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em
 de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de
 tinta a serem compradas e o preço total.
 
-areaQuad = int(input("Informe a area em metros quadrados: "))
+areaQuad = float(input("Informe a area a ser pintada: "))
 
-uso = areaQuad / 3
-totalTinta = 18 / uso
 
-print("Serão necessárias {:.2f} latas de tinta e o valor sera de {:.2f}".format(uso,(totalTinta*80.00)))
+lata = 18 * 3
+aux = 0
+qntLata = 1
+while (aux + lata) < areaQuad :
+    aux += lata
+    qntLata += 1
+
+print("Serão necessárias {:.2f} latas de tinta e o valor sera de {:.2f}".format(qntLata,(qntLata*80.00)))
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -202,6 +207,7 @@ Faça um Programa para uma loja de tintas. O programa deverá pedir o
 
 areaQuad = float(input("Informe a area a ser pintada: "))
 
+areaQuad += (areaQuad / 100) * 10
 
 lata = 18 * 6
 usoLata = areaQuad / lata
@@ -230,8 +236,12 @@ else:
             aux += lata
             qntLata += 1
 
-print("Lata {:.2f} Galao {:.2f} ".format(qntLata,qntGalao))
+total = (qntLata * 80.00) + (qntGalao * 25.00)
+print("Latas: {:.2f}\n Galoes: {:.2f}\n Valor Total: {:.2f} ".format(qntLata,qntGalao,total))
 
 ---------------------------------------------------------------------------------------------------------------------
 
 Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+
+tamanho = float(input("Informe o tamanho do arquivo para download (em MB): "))
+link = float(input("Informe a velocidade de um link de Internet (em Mbps): "))
