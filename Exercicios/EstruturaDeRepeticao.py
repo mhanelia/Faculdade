@@ -29,10 +29,13 @@ print("",anos)
 Altere o programa anterior permitindo ao usuário informar as populações e as
 taxas de crescimento iniciais. Valide a entrada e permita repetir a operação.
 
-
 Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro.
+for i in range(1,21):
+    print("{}".format(i))
 Depois modifique o programa para que ele mostre os números um ao lado do outro.
+
 Faça um programa que leia 5 números e informe o maior número.
+
 Faça um programa que leia 5 números e informe a soma e a média dos números.
 Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
 Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
@@ -45,7 +48,7 @@ Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número i
     ...
     5 X 10 = 50
 a = int(input("Informe o numero que deseja a tabuada: "))
-for i in range(11):
+for i in range(1,11):
     print("{} X {} = {}".format(a,i,a*i))
 
 
@@ -59,7 +62,7 @@ c = 1
 for i in range(3):
     a = b
     b = c
-    c = c + b
+    c =
     print("A",a)
     print("b",b)
     print("c",c)
@@ -90,7 +93,10 @@ O Sr. Manoel Joaquim possui uma grande loja de artigos de R$ 1,99, com cerca de 
     ...
     50 - R$ 99.50
 
-O Sr. Manoel Joaquim acaba de adquirir uma panificadora e pretende implantar a metodologia da tabelinha, que já é um sucesso na sua loja de 1,99. Você foi contratado para desenvolver o programa que monta a tabela de preços de pães, de 1 até 50 pães, a partir do preço do pão informado pelo usuário, conforme o exemplo abaixo:
+O Sr. Manoel Joaquim acaba de adquirir uma panificadora e pretende implantar a
+metodologia da tabelinha, que já é um sucesso na sua loja de 1,99.
+Você foi contratado para desenvolver o programa que monta a tabela de preços de
+pães, de 1 até 50 pães, a partir do preço do pão informado pelo usuário, conforme o exemplo abaixo:
 
     Preço do pão: R$ 0.18
     Panificadora Pão de Ontem - Tabela de preços
