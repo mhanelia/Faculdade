@@ -13,3 +13,7 @@ def ping(host):
 
     # Pingando
     return system_call("ping " + parameters + " " + host) == 0
+
+ipresolvido = ping("8.8.8.8")
+
+print(ipresolvido)

@@ -1,14 +1,24 @@
+# Faça um programa para imprimir:
+# para um n informado pelo usuário. Use uma função que receba um valor n inteiro
+# e imprima até a n-ésima linha.
+        # 1
+        # 2   2
+        # 3   3   3
+        # .....
+        # n   n   n   n   n   n  ... n
+
+num = int(input("informe um numero"))
+nano(num)
+def nano(n):
+
+    for i in range(n+1):
+        a = (str(i) + " ") * i
+        print(a)
+
+--------------------------------------------------------------------------------
 Faça um programa para imprimir:
-
-        1
-        2   2
-        3   3   3
-        .....
-        n   n   n   n   n   n  ... n
-
-    para um n informado pelo usuário. Use uma função que receba um valor n inteiro e imprima até a n-ésima linha.
-
-Faça um programa para imprimir:
+para um n informado pelo usuário. Use uma função que receba um valor n inteiro
+imprima até a n-ésima linha.
 
         1
         1   2
@@ -16,7 +26,7 @@ Faça um programa para imprimir:
         .....
         1   2   3   ...  n
 
-    para um n informado pelo usuário. Use uma função que receba um valor n inteiro imprima até a n-ésima linha.
+--------------------------------------------------------------------------------
 
 Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos.
 Faça um programa, com uma função que necessite de um argumento. A função retorna o valor de caractere ‘P’, se seu argumento for positivo, e ‘N’, se seu argumento for zero ou negativo.
@@ -41,11 +51,6 @@ devolva outra string com os carateres embaralhados. Por exemplo: se função rec
 a palavra python, pode retornar npthyo, ophtyn ou qualquer outra combinação possível,
 de forma aleatória. Padronize em sua função que todos os caracteres serão devolvidos
 em caixa alta ou caixa baixa, independentemente de como foram digitados.
-
-def embarala(word):
-    word = "python"
-    list = word
-
 
 ----------------------------------------------------------------------------------------
 
