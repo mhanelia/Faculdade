@@ -7,13 +7,16 @@
         # .....
         # n   n   n   n   n   n  ... n
 
-num = int(input("informe um numero"))
-nano(num)
+
 def nano(n):
 
     for i in range(n+1):
         a = (str(i) + " ") * i
         print(a)
+
+
+num = int(input("informe um numero"))
+nano(num)
 
 --------------------------------------------------------------------------------
 Faça um programa para imprimir:

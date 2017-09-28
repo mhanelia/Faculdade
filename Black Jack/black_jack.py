@@ -1,6 +1,6 @@
 """Lógica do BlackJack."""
 import random
-import os
+from os import system as system_call
 
 
 
@@ -30,14 +30,13 @@ class BlackJack(object):
         cards = []
         cards.append(self.deck[:2])
         del self.deck[:2]
-        # del self.deck[self.deck.index(cards[0])]
 
-        # del self.deck[self.deck.index(cards[1])]
         return cards
 
     def hit(self, mao):
         mao.append(self.deck[:1])
         del self.deck[:1]
+        system_call("cls")
 
         return mao
 
@@ -59,8 +58,8 @@ class BlackJack(object):
         return point
 
 
-    def show_hand(self, player, point):
-        print("Cartas {}; Pontos {}".format(player,point))
+    def show_hand(self, name, cards, point):
+        print("Jogador: {} - Cartas {}; Pontos {}".format(name,cards,point))
 
-    def bet(self, pc, point):
-        print("Cartas {}; Pontos {}".format(pc,point))
+    def bet(self,name, pc, point):
+        print("Jogador: {} - Cartas {}; Pontos {}".format(name,pc,point))
