@@ -70,4 +70,4 @@ class BlackJack(object):
 
 
 points = {"Murilo":str(15), "Maquina":str(15)}
-print("Vencedor: {}".format(points.keys(max(points.values())))
+print("Vencedor: {}".format(points.get(str(max(points.values())))))
