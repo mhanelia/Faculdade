@@ -8,6 +8,8 @@ list.reverse()
 print(list)
 ---------------------------------------------------------------------------------------------------------------------
 Faça um Programa que leia 4 notas, mostre as notas e a média na tela.
+list = [5,8,10,6]
+med(list)
 ---------------------------------------------------------------------------------------------------------------------
 Faça um Programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as consoantes.
 ---------------------------------------------------------------------------------------------------------------------
@@ -58,7 +60,12 @@ Faça um programa que leia um número indeterminado de valores, correspondentes 
     Calcule e mostre a quantidade de valores acima da média calculada;
     Calcule e mostre a quantidade de valores abaixo de sete;
     Encerre o programa com uma mensagem;
-Utilize uma lista para resolver o problema a seguir. Uma empresa paga seus vendedores com base em comissões. O vendedor recebe $200 por semana mais 9 por cento de suas vendas brutas daquela semana. Por exemplo, um vendedor que teve vendas brutas de $3000 em uma semana recebe $200 mais 9 por cento de $3000, ou seja, um total de $470. Escreva um programa (usando um array de contadores) que determine quantos vendedores receberam salários nos seguintes intervalos de valores:
+Utilize uma lista para resolver o problema a seguir. Uma empresa paga seus
+vendedores com base em comissões. O vendedor recebe $200 por semana mais 9 por
+cento de suas vendas brutas daquela semana. Por exemplo, um vendedor que teve
+vendas brutas de $3000 em uma semana recebe $200 mais 9 por cento de $3000,
+ou seja, um total de $470. Escreva um programa (usando um array de contadores)
+que determine quantos vendedores receberam salários nos seguintes intervalos de valores:
     $200 - $299
     $300 - $399
     $400 - $499
@@ -250,5 +257,3 @@ Faça um programa que simule um lançamento de dados. Lance o dado 100 vezes e
 armazene os resultados em um vetor . Depois, mostre quantas vezes cada valor foi
 conseguido. Dica: use um vetor de contadores(1-6) e uma função para gerar numeros
  aleatórios, simulando os lançamentos dos dados.
-
- 

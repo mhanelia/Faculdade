@@ -34,10 +34,10 @@ class BlackJack(object):
         return cards
 
     def hit(self, mao):
-        system_call("cls")
+        # system_call("cls")
         mao.append(self.deck[:1])
         del self.deck[:1]
-        system_call("cls")
+        # system_call("cls")
 
         return mao
 
@@ -63,11 +63,24 @@ class BlackJack(object):
         print("Jogador: {} - Cartas {}; Pontos {}".format(name,cards,point))
 
 
-    def bet(self,points, hand):
-        for i in range(0, len(hand)):
-            print("Jogador: {} - Cartas {}; Pontos {}".format(points,points,points))
+    def bet(self,pc, player):
+
+        if((pc < 21) and (player < 21)):
+            if (player == pc):
+                print("Empate!".format(pc))
+            elif (player > pc):
+                print("Vencedor: Murilo Pontos: {} ".format(player))
+            elif (pc > player):
+                print("Vencedor: Maquina Pontos: {} ".format(pc))
+        else:
+            print("Os dois estouraram!")
 
 
 
-points = {"Murilo":str(15), "Maquina":str(15)}
-print("Vencedor: {}".format(points.get(str(max(points.values())))))
+
+
+
+#         for i in range(0, len(hand)):
+#             print("Jogador: {} - Cartas {}; Pontos {}".format(points,points,points))
+#
+# print("Vencedor: {}".format(points.index(max(points))))
