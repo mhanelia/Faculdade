@@ -2,6 +2,18 @@
 
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask('web') #nome do arquivo que eu quero instanciar
 
-app.run()
+@app.route('/')
+def index():
+    return 'Sou a página principal!'
+
+@app.route('/ola/<nome>')
+def ola(nome):
+    return 'Olá {}!'.format(nome)
+
+@app.route('/ola/<int:idade>')
+def idade(idade):
+    return 'Olá {}!'.format(idade)
+
+app.run(debug=True, use_reloader=True)

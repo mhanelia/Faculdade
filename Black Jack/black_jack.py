@@ -65,15 +65,24 @@ class BlackJack(object):
 
     def bet(self,pc, player):
 
-        if((pc < 21) and (player < 21)):
-            if (player == pc):
-                print("Empate!".format(pc))
-            elif (player > pc):
-                print("Vencedor: Murilo Pontos: {} ".format(player))
-            elif (pc > player):
-                print("Vencedor: Maquina Pontos: {} ".format(pc))
-        else:
-            print("Os dois estouraram!")
+        print(pc)
+        print(player)
+
+        if (player == pc):
+            print("Empate!".format(pc))
+
+        elif ((pc > player) and (pc <= 21)):
+            print("Vencedor: Maquina Pontos: {} ".format(pc))
+
+        elif (player > pc) and (player <= 21):
+            print("Vencedor: Murilo Pontos: {} ".format(player))
+
+        elif (pc > player) and (pc > 21):
+            print("Vencedor: Murilo Pontos: {} ".format(player))
+
+        elif (player > pc) and (player > 21):
+            print("Vencedor: Maquina Pontos: {} ".format(pc))
+
 
 
 
