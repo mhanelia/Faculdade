@@ -56,8 +56,8 @@ self.numbers = ["4", "5", "6", "7", "Q", "J", "K", "A", "2", "3"]
 self.suits =   ["♦", "♠", "♥", "♣"]
 
 suits =   ["♦", "♠", "♥", "♣"]
-mao = [['4♣', '2♠']]
-mesa = [['4♣']]
+mao = [['4♣', '2♦', "5♥"]]
+mesa = [['4♠']]
 count = 0
 for item in mao:
     for card in item:
@@ -65,8 +65,7 @@ for item in mao:
         m2 = m1[0]
         print(card)
         print(m2)
-        if suits.index(m2[1]) > suits.index(card[1]):
+        if suits.index(card[1]) > suits.index(m2[1]):
             count = count + 1
-        else:
-            count = count -1
+
 print(count)
