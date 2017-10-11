@@ -34,10 +34,9 @@ class BlackJack(object):
         return cards
 
     def hit(self, mao):
-        # system_call("cls")
+
         mao.append(self.deck[:1])
         del self.deck[:1]
-        # system_call("cls")
 
         return mao
 
@@ -82,14 +81,3 @@ class BlackJack(object):
 
         elif (player > pc) and (player > 21):
             print("Vencedor: Maquina Pontos: {} ".format(pc))
-
-
-
-
-
-
-
-#         for i in range(0, len(hand)):
-#             print("Jogador: {} - Cartas {}; Pontos {}".format(points,points,points))
-#
-# print("Vencedor: {}".format(points.index(max(points))))
