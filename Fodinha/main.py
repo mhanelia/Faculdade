@@ -6,7 +6,12 @@ f.shuffle()
 
 murilo = f.hand()
 maressa = f.hand()
+f.f_round()
+
+f.f_appendHand(murilo)
+f.f_appendHand(maressa)
 
 print(murilo)
 print(maressa)
-f.c_round()
+print(f.table())
+f.compare()
