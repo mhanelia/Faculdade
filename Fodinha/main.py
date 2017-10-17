@@ -4,14 +4,15 @@ f = Fodinha()
 
 f.shuffle()
 
+f.f_table()
 murilo = f.hand()
 maressa = f.hand()
-f.f_round()
-
-f.f_appendHand(murilo)
-f.f_appendHand(maressa)
-
 print(murilo)
 print(maressa)
-print(f.table())
+
+f.f_round()
+
+f.f_appendHand(murilo[0])
+f.f_appendHand(maressa[0])
+
 f.compare()
