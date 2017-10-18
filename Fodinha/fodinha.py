@@ -35,7 +35,7 @@ class Fodinha(object):
         hand = []
         hand.append(self.deck[:self.round])
         del self.deck[:self.round]
-
+        hand = hand[0]
         return hand
 
     def f_round(self):
@@ -62,41 +62,41 @@ class Fodinha(object):
         print(self.appendHand)
         lista = []
         lista2= []
-        for itens in self.appendHand:
-            for n in itens:
+        for n in self.appendHand:
+            # for n in itens:
 
-                lista2.append(n)
-                if '♦' in n[1]:
+            lista2.append(n)
+            if '♦' in n[1]:
+                if (n[0] == '4' and self.table[0] == '3') or self.numbers.index(n[0]) == self.numbers.index(self.table[0]) + 1 :
+                    res = ((ord('♦') - 7)) * self.numbers.index(n[0]) * 2000
+                    lista.append(res)
+                else:
+                    res = ((ord('♦') - 7)) * self.numbers.index(n[0])
+                    lista.append(res)
+
+            elif '♠' in n[1]:
                     if (n[0] == '4' and self.table[0] == '3') or self.numbers.index(n[0]) == self.numbers.index(self.table[0]) + 1 :
-                        res = ((ord('♦') - 7)) * self.numbers.index(n[0]) * 2000
+                        res = (ord('♠')) * self.numbers.index(n[0]) * 2000
                         lista.append(res)
                     else:
-                        res = ((ord('♦') - 7)) * self.numbers.index(n[0])
+                        res = (ord('♠')) * self.numbers.index(n[0])
                         lista.append(res)
 
-                elif '♠' in n[1]:
-                        if (n[0] == '4' and self.table[0] == '3') or self.numbers.index(n[0]) == self.numbers.index(self.table[0]) + 1 :
-                            res = (ord('♠')) * self.numbers.index(n[0]) * 2000
-                            lista.append(res)
-                        else:
-                            res = (ord('♠')) * self.numbers.index(n[0])
-                            lista.append(res)
+            elif '♥' in n[1]:
+                if (n[0] == '4' and self.table[0] == '3') or self.numbers.index(n[0]) == self.numbers.index(self.table[0]) + 1 :
+                    res = ((ord('♥') - 4)) * self.numbers.index(n[0]) * 2000
+                    lista.append(res)
+                else:
+                    res = ((ord('♥') - 4)) * self.numbers.index(n[0])
+                    lista.append(res)
 
-                elif '♥' in n[1]:
-                    if (n[0] == '4' and self.table[0] == '3') or self.numbers.index(n[0]) == self.numbers.index(self.table[0]) + 1 :
-                        res = ((ord('♥') - 4)) * self.numbers.index(n[0]) * 2000
-                        lista.append(res)
-                    else:
-                        res = ((ord('♥') - 4)) * self.numbers.index(n[0])
-                        lista.append(res)
-
-                elif '♣' in n[1]:
-                    if (n[0] == '4' and self.table[0] == '3') or self.numbers.index(n[0]) == self.numbers.index(self.table[0]) + 1 :
-                        res = (ord('♣') - 1) * self.numbers.index(n[0]) * 2000
-                        lista.append(res)
-                    else:
-                        res = (ord('♣') - 1) * self.numbers.index(n[0])
-                        lista.append(res)
+            elif '♣' in n[1]:
+                if (n[0] == '4' and self.table[0] == '3') or self.numbers.index(n[0]) == self.numbers.index(self.table[0]) + 1 :
+                    res = (ord('♣') - 1) * self.numbers.index(n[0]) * 2000
+                    lista.append(res)
+                else:
+                    res = (ord('♣') - 1) * self.numbers.index(n[0])
+                    lista.append(res)
 
         print("Mesa: {}".format(self.table))
         print("Mão 1: {} ---- Mão 2: {}".format(self.appendHand[0], self.appendHand[1]))
